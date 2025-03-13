@@ -14,7 +14,7 @@ export class ReservationsController extends Contorller {
         this.service = new PageService();
     }
 
-    public async test(Request: Request, Response: Response) {
+    public async show(Request: Request, Response: Response) {
         await DB.connection?.query("USE lab_b310;");
         const resp = await DB.connection?.query("SELECT * FROM Reservations;");
         Response.send(resp)

@@ -13,8 +13,8 @@ export class ReservationsRoute extends Route{
     }
 
     protected setRoutes(): void {
-        this.router.get(`${this.url}test`,(req, res)=>{
-            this.Contorller.test(req, res);
+        this.router.get(`${this.url}show`,(req, res)=>{
+            this.Contorller.show(req, res);
         })
     }
 
